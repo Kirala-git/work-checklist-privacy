@@ -11,16 +11,16 @@
 5. Branch 选择 `main`，目录选择 `/root`。
 6. 保存后等待 GitHub Pages 生成网址。
 
-推广首页地址：
+隐私政策地址（保持原 App Store Connect 地址不变）：
 
 ```text
 https://你的GitHub用户名.github.io/work-checklist-privacy/
 ```
 
-隐私政策地址（填入 App Store Connect）：
+推广首页地址：
 
 ```text
-https://你的GitHub用户名.github.io/work-checklist-privacy/privacy/
+https://你的GitHub用户名.github.io/work-checklist-privacy/worklist/
 ```
 
 ## App Store
