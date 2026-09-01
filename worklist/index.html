@@ -1,29 +1,142 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1e58">
-  <title>WorkList｜记录做成的事，看见工作的价值</title>
-  <meta name="description" content="WorkList 是一款本地优先的工作成果记录工具。记录项目、归档成果，一键导出 Word、Excel、PDF 和 PPT。">
-  <meta property="og:title" content="WorkList｜记录做成的事"><meta property="og:description" content="别再用回忆写总结。把每份工作，沉淀成可见的成果。"><meta property="og:type" content="website"><meta property="og:image" content="assets/app-icon.png">
-  <link rel="icon" href="assets/app-icon.png"><link rel="apple-touch-icon" href="assets/app-icon.png"><link rel="stylesheet" href="assets/styles.css"><script src="assets/site.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10266f">
+  <title>工作清单 WorkList｜把每天的工作，变成清晰的成果</title>
+  <meta name="description" content="工作清单 WorkList 是一款本地优先的工作成果记录工具。按项目和月份记录工作、归档附件，一键导出 Word 日报与工作清单。">
+  <meta property="og:title" content="工作清单 WorkList｜随手记成果，月底少遗漏">
+  <meta property="og:description" content="记录、归档、导出，一套更轻松的工作整理方式。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/app-icon.png">
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
-  <header class="site-header"><a class="brand" href="#top"><img src="assets/app-icon.png" alt="" width="44" height="44"><span><strong>WorkList</strong><small>WORK RESULTS, ORGANIZED</small></span></a><button class="menu-button" aria-expanded="false" aria-controls="nav">菜单</button><nav id="nav"><a href="#value" data-zh="产品价值" data-en="Why WorkList">产品价值</a><a href="#features" data-zh="核心功能" data-en="Features">核心功能</a><a href="#voices" data-zh="用户反馈" data-en="User stories">用户反馈</a><a href="#privacy" data-zh="隐私安全" data-en="Privacy">隐私安全</a><button class="language" id="language-toggle">EN</button><a class="nav-cta" href="https://apps.apple.com/app/worklist/id6795366716" target="_blank" rel="noopener" data-zh="App Store 下载" data-en="Download">App Store 下载</a></nav></header>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="工作清单首页">
+      <img src="assets/app-icon.png" alt="" width="42" height="42">
+      <span><strong>工作清单</strong><small>WorkList</small></span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="nav">菜单</button>
+    <nav id="nav" aria-label="主导航">
+      <a href="#features">核心功能</a><a href="#workflow">使用方式</a><a href="#privacy">隐私安全</a><a href="#faq">常见问题</a>
+      <a class="nav-cta app-store-link" href="https://apps.apple.com/app/worklist/id6795366716" target="_blank" rel="noopener">App Store 下载</a>
+    </nav>
+  </header>
 
   <main id="top">
-    <section class="hero section"><div class="hero-copy reveal"><p class="overline" data-zh="WORKLIST 1.5 · 工作成果记录工具" data-en="WORKLIST 1.5 · WORK RESULT TRACKER">WORKLIST 1.5 · 工作成果记录工具</p><h1 data-zh="记录做成的事，<br><em>看见工作的价值。</em>" data-en="Record what you achieved.<br><em>Show the value of your work.</em>">记录做成的事，<br><em>看见工作的价值。</em></h1><p class="lead" data-zh="工作不该只留在记忆里。WorkList 把项目、记录和成果放在一起，需要时直接生成专业工作报告。" data-en="Your work should not live only in memory. WorkList keeps projects, records and deliverables together, ready to become a professional report.">工作不该只留在记忆里。WorkList 把项目、记录和成果放在一起，需要时直接生成专业工作报告。</p><div class="hero-actions"><a class="button primary" href="https://apps.apple.com/app/worklist/id6795366716" target="_blank" rel="noopener"><span class="apple"></span><span><small data-zh="下载于" data-en="Download on the">下载于</small>App Store</span></a><a class="text-link" href="#voices"><span data-zh="看看它解决了什么" data-en="See what it changes">看看它解决了什么</span> ↘</a></div><div class="trust-row"><span data-zh="无需账号" data-en="No account">无需账号</span><span data-zh="本地保存" data-en="Stored locally">本地保存</span><span data-zh="无广告追踪" data-en="No ad tracking">无广告追踪</span></div></div><div class="hero-stage reveal"><div class="stage-word">RESULT</div><div class="phone phone-left"><img src="assets/screenshots-v15/project.jpg" alt="WorkList 项目工作记录"></div><div class="phone phone-right"><img src="assets/screenshots-v15/export.jpg" alt="WorkList 报告导出"></div><div class="result-chip c1"><b>36</b><span data-zh="项工作已留痕" data-en="work items recorded">项工作已留痕</span></div><div class="result-chip c2">Word · Excel · PDF · PPT</div></div></section>
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span>专为项目工作者打造</div>
+        <h1>把每天的工作，<br><em>变成清晰的成果。</em></h1>
+        <p class="lead">按项目、月份和分类随手记录，归档文件与图片，到汇报时一键导出 Word 日报与工作清单。</p>
+        <div class="hero-actions">
+          <a class="button primary app-store-link" href="https://apps.apple.com/app/worklist/id6795366716" target="_blank" rel="noopener"><span class="apple">●</span><span><small>下载于</small>App Store</span></a>
+          <a class="button secondary" href="#workflow">看看如何使用 <span>→</span></a>
+        </div>
+        <div class="trust-row"><span>✓ 无需账号</span><span>✓ 本地保存</span><span>✓ 无广告追踪</span></div>
+      </div>
+      <div class="hero-visual reveal" aria-label="工作清单 App 界面预览">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="phone phone-back"><img src="assets/screenshots/editor.jpg" decoding="async" alt="新增与修改工作界面"></div>
+        <div class="phone phone-main"><img src="assets/screenshots/project.jpg" fetchpriority="high" alt="项目月度工作清单界面"></div>
+        <div class="float-card fc-one"><b>Word</b><span>清单已生成</span><i>✓</i></div>
+        <div class="float-card fc-two"><b>4</b><span>项工作已归档</span></div>
+      </div>
+    </section>
 
-    <section class="statement"><p data-zh="TodoList 计划要做什么。<br><strong>WorkList 记录你真正做成了什么。</strong>" data-en="A TodoList plans what you will do.<br><strong>WorkList records what you actually achieved.</strong>">TodoList 计划要做什么。<br><strong>WorkList 记录你真正做成了什么。</strong></p></section>
+    <section class="proof-strip" aria-label="产品优势">
+      <div><strong>3 步</strong><span>记录到成单</span></div><div><strong>100%</strong><span>设备本地处理</span></div><div><strong>.docx</strong><span>真实 Word 文档</span></div><div><strong>iPhone · iPad</strong><span>随时记录与整理</span></div>
+    </section>
 
-    <section id="value" class="section"><div class="section-head reveal"><span>01 / THE PROBLEM</span><h2 data-zh="工作做了很多，<br>价值却常常说不清。" data-en="You did the work.<br>But can you show its value?">工作做了很多，<br>价值却常常说不清。</h2></div><div class="problem-grid"><article class="problem-card reveal"><b>01</b><h3 data-zh="记忆是会过期的" data-en="Memory expires">记忆是会过期的</h3><p data-zh="月底才回想这个月做了什么，小事容易遗漏，重要价值也容易被低估。" data-en="Reconstructing a month from memory means details disappear and valuable work gets overlooked.">月底才回想这个月做了什么，小事容易遗漏，重要价值也容易被低估。</p></article><article class="problem-card red reveal"><b>02</b><h3 data-zh="成果总在不同地方" data-en="Results are scattered">成果总在不同地方</h3><p data-zh="文件在文件夹，图片在手机，过程在微信。要交付时，又要到处翻找。" data-en="Files live in folders, images on your phone and decisions in chats. Delivery becomes another search task.">文件在文件夹，图片在手机，过程在微信。要交付时，又要到处翻找。</p></article><article class="problem-card dark reveal"><b>03</b><h3 data-zh="总结变成重复劳动" data-en="Reporting repeats the work">总结变成重复劳动</h3><p data-zh="工作已经做完，写日报、月报、述职时却还要重新梳理一遍。" data-en="The work is done, yet reports and reviews force you to organize it all again.">工作已经做完，写日报、月报、述职时却还要重新梳理一遍。</p></article></div></section>
+    <section class="section pain-section">
+      <div class="section-heading centered reveal"><span class="kicker">为什么需要 WorkList</span><h2>工作做完了，整理不该再做一遍</h2><p>把那些散落在记忆、微信和文件夹里的成果，在发生时就放回正确的位置。</p></div>
+      <div class="pain-grid">
+        <article class="pain-card reveal"><span class="number">01</span><div class="mini-icon">◷</div><h3>月底回忆不完整</h3><p>重要工作随时补录，按月份自动归位，不再靠聊天记录拼凑。</p></article>
+        <article class="pain-card reveal"><span class="number">02</span><div class="mini-icon">⌁</div><h3>成果文件太分散</h3><p>把图片、文档与工作事项放在一起，项目交付过程清楚可查。</p></article>
+        <article class="pain-card reveal"><span class="number">03</span><div class="mini-icon">▤</div><h3>汇报格式重复整理</h3><p>选择日期与范围，直接生成结构清晰的 Word 工作清单。</p></article>
+      </div>
+    </section>
 
-    <section id="features" class="features"><div class="section feature-intro"><div class="section-head light reveal"><span>02 / THE WORKFLOW</span><h2 data-zh="随手记录，持续归档，<br>需要时一键交付。" data-en="Capture as you go.<br>Deliver when it matters.">随手记录，持续归档，<br>需要时一键交付。</h2></div><div class="feature-grid"><article><b>01</b><h3 data-zh="记下真实工作" data-en="Capture real work">记下真实工作</h3><p data-zh="按项目、类别和起止时间记录，草稿自动保存。" data-en="Record by project, category and time range, with automatic drafts.">按项目、类别和起止时间记录，草稿自动保存。</p></article><article><b>02</b><h3 data-zh="归档每份成果" data-en="Connect every result">归档每份成果</h3><p data-zh="文件与图片归到对应工作，支持命名、预览和分享。" data-en="Attach files to the right work item, rename, preview and share.">文件与图片归到对应工作，支持命名、预览和分享。</p></article><article><b>03</b><h3 data-zh="导出专业报告" data-en="Export professional reports">导出专业报告</h3><p data-zh="Word、Excel、PDF、PPT，一份记录，多种交付。" data-en="Word, Excel, PDF and PowerPoint from one source of truth.">Word、Excel、PDF、PPT，一份记录，多种交付。</p></article></div><div class="feature-showcase"><img src="assets/screenshots-v15/editor.jpg" loading="lazy" alt="工作记录"><img src="assets/screenshots-v15/results.jpg" loading="lazy" alt="成果管理"><img src="assets/screenshots-v15/export.jpg" loading="lazy" alt="报告导出"></div></div></section>
+    <section id="features" class="section feature-section">
+      <div class="section-heading reveal"><span class="kicker">核心能力</span><h2>从随手记录，到随时可交付</h2><p>围绕真实工作场景设计，每一步都简单、直接。</p></div>
+      <div class="feature-row reveal">
+        <div class="feature-copy"><span class="feature-index">01 · 记录</span><h3>项目很多，也能一眼看清</h3><p>按项目组管理工作，用月份、分类和时间快速定位。支持任意日期补录与修改，今天忙过的事不会留到月底再回忆。</p><ul><li>项目组独立管理</li><li>月度工作总览</li><li>自定义工作分类</li></ul></div>
+        <div class="feature-art blue-art"><div class="phone flat"><img src="assets/screenshots/project.jpg" loading="lazy" decoding="async" alt="按项目和月份查看工作"></div><span class="art-badge">项目 · 月份 · 分类</span></div>
+      </div>
+      <div class="feature-row reverse reveal">
+        <div class="feature-copy"><span class="feature-index">02 · 归档</span><h3>工作内容和成果，放在一起</h3><p>文件、图片和交付成果直接归档到对应工作项。支持从微信或系统分享导入，需要时随时预览、分享。</p><ul><li>上传文件与图片</li><li>微信文件转存</li><li>附件预览与分享</li></ul></div>
+        <div class="feature-art warm-art"><div class="phone flat"><img src="assets/screenshots/editor.jpg" loading="lazy" decoding="async" alt="工作内容和附件归档界面"></div><div class="file-chip">⌁ 会议纪要.docx</div></div>
+      </div>
+      <div class="feature-row reveal">
+        <div class="feature-copy"><span class="feature-index">03 · 导出</span><h3>日报、月报，点一下就成单</h3><p>可导出指定日期、当前月、近三个月、近六个月或全部工作，并支持按时间或分类汇总，生成真正的 Word 文档。</p><ul><li>工作日报与周期清单</li><li>按时间或分类排序</li><li>标准 .docx 文档</li></ul></div>
+        <div class="feature-art dark-art"><div class="phone flat"><img src="assets/screenshots/word.jpg" loading="lazy" decoding="async" alt="Word 工作清单分享界面"></div><div class="doc-card"><b>工作清单.docx</b><span>已准备好分享</span></div></div>
+      </div>
+    </section>
 
-    <section id="voices" class="voices section"><div class="section-head reveal"><span>03 / USER VALUE</span><h2 data-zh="它解决的，<br>不只是“记不住”。" data-en="It solves more than<br>just forgetting.">它解决的，<br>不只是“记不住”。</h2><p class="disclosure" data-zh="以下内容以用户反馈的形式展示产品价值，人物与表述为场景化创作，不代表真实用户评价或效果承诺。" data-en="The following fictionalized user-style stories illustrate product value. They are not real testimonials or performance claims.">以下内容以用户反馈的形式展示产品价值，人物与表述为场景化创作，不代表真实用户评价或效果承诺。</p></div><div class="voice-feature reveal"><i>“</i><blockquote data-zh="以前写月报，先要花很久翻微信和文件夹。现在每次做完随手记下，月底打开 WorkList，导出就是一份完整的工作底稿。" data-en="I used to spend ages searching chats and folders before writing a monthly report. Now I record work as it happens, and WorkList gives me a complete starting point at month-end.">以前写月报，先要花很久翻微信和文件夹。现在每次做完随手记下，月底打开 WorkList，导出就是一份完整的工作底稿。</blockquote><p><b data-zh="项目经理" data-en="Project Manager">项目经理</b><small data-zh="多项目并行 · 月度汇报" data-en="Multiple projects · Monthly reporting">多项目并行 · 月度汇报</small></p></div><div class="voice-grid"><article class="voice-card reveal"><span>CONSULTING</span><blockquote data-zh="“客户突然问某个阶段交付了什么，以前要逐个文件找。现在打开项目组，工作和成果就在一起。”" data-en="“When a client asks what was delivered, I no longer hunt through files. The work and its results are together in one project.”">“客户突然问某个阶段交付了什么，以前要逐个文件找。现在打开项目组，工作和成果就在一起。”</blockquote><p data-zh="咨询顾问 · 成果交付" data-en="Consultant · Deliverables">咨询顾问 · 成果交付</p></article><article class="voice-card navy reveal"><span>DESIGN</span><blockquote data-zh="“最有用的不是又多了一个待办工具，而是方案、修改稿和最终文件终于能对应到具体工作。”" data-en="“It is not another task app. Briefs, revisions and final files finally stay connected to the actual work.”">“最有用的不是又多了一个待办工具，而是方案、修改稿和最终文件终于能对应到具体工作。”</blockquote><p data-zh="设计师 · 版本与成果归档" data-en="Designer · Versions & results">设计师 · 版本与成果归档</p></article><article class="voice-card reveal"><span>FREELANCE</span><blockquote data-zh="“述职时才发现，我不是没有成果，只是它们之前没有被系统地留下来。WorkList 让这些努力变得可见。”" data-en="“I had plenty of results—I simply had never preserved them systematically. WorkList makes that effort visible.”">“述职时才发现，我不是没有成果，只是它们之前没有被系统地留下来。WorkList 让这些努力变得可见。”</blockquote><p data-zh="自由职业者 · 述职与复盘" data-en="Freelancer · Reviews & retrospectives">自由职业者 · 述职与复盘</p></article></div><div class="value-line reveal"><span data-zh="记录不是额外的负担" data-en="Recording is not extra work">记录不是额外的负担</span><strong data-zh="它是为了避免你把已经完成的工作，再整理一次。" data-en="It keeps you from organizing finished work all over again.">它是为了避免你把已经完成的工作，再整理一次。</strong></div></section>
+    <section id="workflow" class="workflow section">
+      <div class="section-heading centered reveal"><span class="kicker light">简单上手</span><h2>三步，让汇报有据可循</h2><p>没有复杂设置，打开 App 就可以开始。</p></div>
+      <div class="steps">
+        <article class="step reveal"><span>1</span><div class="step-art"><b>＋</b><i>项目组</i></div><h3>建立项目</h3><p>按客户、团队或项目创建独立分组。</p></article>
+        <div class="step-line"></div>
+        <article class="step reveal"><span>2</span><div class="step-art"><b>✓</b><i>记录成果</i></div><h3>随手记录</h3><p>写下工作内容，顺手归档文件和图片。</p></article>
+        <div class="step-line"></div>
+        <article class="step reveal"><span>3</span><div class="step-art"><b>W</b><i>导出清单</i></div><h3>一键成单</h3><p>选择范围与顺序，生成 Word 后直接分享。</p></article>
+      </div>
+    </section>
 
-    <section id="privacy" class="privacy"><div class="section privacy-inner"><div class="reveal"><span>04 / PRIVACY</span><h2 data-zh="你的工作资料，<br>默认只属于你。" data-en="Your work data<br>belongs to you.">你的工作资料，<br>默认只属于你。</h2><p data-zh="无需账号，没有广告 SDK 和行为追踪。项目、工作记录与附件默认保存在设备本地。" data-en="No account, no advertising SDK and no behavioral tracking. Your records stay on device by default.">无需账号，没有广告 SDK 和行为追踪。项目、工作记录与附件默认保存在设备本地。</p><a href="https://kirala-git.github.io/work-checklist-privacy/" data-zh="查看完整隐私政策 →" data-en="Read the privacy policy →">查看完整隐私政策 →</a></div><div class="privacy-grid reveal"><div><b>100%</b><span data-zh="本地优先" data-en="Local first">本地优先</span></div><div><b>0</b><span data-zh="广告追踪" data-en="Ad trackers">广告追踪</span></div><div><b>⇄</b><span data-zh="合并或覆盖恢复" data-en="Merge or replace">合并或覆盖恢复</span></div><div><b>⌑</b><span data-zh="完整备份" data-en="Complete backup">完整备份</span></div></div></div></section>
+    <section class="gallery-section section">
+      <div class="gallery-head reveal"><div class="section-heading"><span class="kicker">真实界面</span><h2>每个细节，都为工作服务</h2></div><div class="gallery-controls"><button id="gallery-prev" aria-label="向前查看">←</button><button id="gallery-next" aria-label="向后查看">→</button></div></div>
+      <div class="gallery" id="gallery" tabindex="0">
+        <figure><img src="assets/screenshots/month.jpg" loading="lazy" decoding="async" alt="项目列表"><figcaption>项目总览</figcaption></figure>
+        <figure><img src="assets/screenshots/project.jpg" loading="lazy" decoding="async" alt="月度工作"><figcaption>月度工作</figcaption></figure>
+        <figure><img src="assets/screenshots/editor.jpg" loading="lazy" decoding="async" alt="记录工作"><figcaption>记录与归档</figcaption></figure>
+        <figure><img src="assets/screenshots/attachments.jpg" loading="lazy" decoding="async" alt="附件管理"><figcaption>成果附件</figcaption></figure>
+        <figure><img src="assets/screenshots/export.jpg" loading="lazy" decoding="async" alt="导出设置"><figcaption>灵活导出</figcaption></figure>
+        <figure><img src="assets/screenshots/word.jpg" loading="lazy" decoding="async" alt="分享 Word"><figcaption>分享清单</figcaption></figure>
+      </div>
+    </section>
 
-    <section class="download section"><div class="download-card reveal"><div><img src="assets/app-icon.png" alt="WorkList"><span>WORKLIST 1.5</span></div><h2 data-zh="下一次汇报，<br>别再从回忆开始。" data-en="Your next report<br>should not start from memory.">下一次汇报，<br>别再从回忆开始。</h2><a class="button white" href="https://apps.apple.com/app/worklist/id6795366716" target="_blank" rel="noopener"><span class="apple"></span><span><small data-zh="下载于" data-en="Download on the">下载于</small>App Store</span></a></div></section>
+    <section id="privacy" class="privacy-section section">
+      <div class="privacy-card reveal">
+        <div class="privacy-visual"><div class="shield">✓</div><span class="privacy-dot d1"></span><span class="privacy-dot d2"></span><span class="privacy-dot d3"></span></div>
+        <div class="privacy-copy"><span class="kicker light">本地优先</span><h2>工作资料，默认只属于你</h2><p>无需账号，没有广告 SDK 和行为追踪。项目、工作记录与附件默认保存在设备本地，不主动上传服务器。</p><div class="privacy-points"><span>✓ iOS 本地沙盒</span><span>✓ 系统文件保护</span><span>✓ 用户自主分享</span><span>✓ 不接入云端同步</span></div><a href="../">查看完整隐私政策 →</a></div>
+      </div>
+    </section>
+
+    <section class="audience section">
+      <div class="section-heading centered reveal"><span class="kicker">为认真做事的人设计</span><h2>你的工作方式，WorkList 都懂</h2></div>
+      <div class="roles reveal"><span>咨询顾问</span><span>设计人员</span><span>工程实施</span><span>项目经理</span><span>运营人员</span><span>自由职业者</span></div>
+    </section>
+
+    <section id="faq" class="faq section">
+      <div class="section-heading reveal"><span class="kicker">常见问题</span><h2>下载之前，你可能还想知道</h2></div>
+      <div class="faq-list">
+        <details class="reveal"><summary>使用 WorkList 需要注册账号吗？</summary><p>不需要。当前版本没有账号系统，下载后即可使用。</p></details>
+        <details class="reveal"><summary>我的工作记录会上传到服务器吗？</summary><p>不会主动上传。工作记录、分类与附件默认保存在设备本地；只有你主动使用系统分享功能时，文件才会交给你选择的其他应用。</p></details>
+        <details class="reveal"><summary>可以导出哪些内容和格式？</summary><p>支持指定日期的工作日报，以及当前月、近三个月、近六个月或全部工作的清单，并生成标准 .docx Word 文档。</p></details>
+        <details class="reveal"><summary>可以从微信导入文件吗？</summary><p>可以。你可以通过微信的分享或“用其他应用打开”将文件转存到 WorkList，再归档到具体工作项。</p></details>
+        <details class="reveal"><summary>换手机或卸载 App 后数据还在吗？</summary><p>当前版本不提供云端备份，卸载 App、设备损坏或系统抹除可能导致本地数据无法恢复。重要资料建议定期导出并自行备份。</p></details>
+      </div>
+    </section>
+
+    <section id="download" class="download section">
+      <div class="download-card reveal">
+        <img src="assets/app-icon.png" alt="工作清单 App 图标">
+        <div><span>WorkList for iPhone &amp; iPad</span><h2>从今天开始记录，<br>让下一次汇报更轻松。</h2></div>
+        <a class="button white app-store-link" href="https://apps.apple.com/app/worklist/id6795366716" target="_blank" rel="noopener"><span class="apple">●</span><span><small>下载于</small>App Store</span></a>
+      </div>
+    </section>
   </main>
-  <footer><div class="footer-brand"><img src="assets/app-icon.png" alt="" width="50" height="50"><div><b>WorkList</b><span data-zh="记录做成的事，看见工作的价值" data-en="Record what you achieve. Show the value of your work.">记录做成的事，看见工作的价值</span></div></div><div class="footer-links"><a href="#features" data-zh="产品功能" data-en="Features">产品功能</a><a href="https://kirala-git.github.io/work-checklist-privacy/" data-zh="隐私政策" data-en="Privacy">隐私政策</a><a href="mailto:94213208@qq.com" data-zh="联系我们" data-en="Contact">联系我们</a></div><p>© 2026 WorkList. All rights reserved.</p></footer>
-</body></html>
+
+  <footer>
+    <div class="footer-brand"><img src="assets/app-icon.png" alt="" width="52" height="52"><div><b>工作清单</b><span>随手记成果，月底少遗漏</span></div></div>
+    <div class="footer-links"><a href="#features">产品功能</a><a href="../">隐私政策</a><a href="mailto:94213208@qq.com">联系我们</a></div>
+    <p>© 2026 WorkList. All rights reserved.</p>
+  </footer>
+</body>
+</html>
