@@ -24,6 +24,7 @@ function applyLanguage(){
   });
   if(languageButton)languageButton.textContent=language==='zh'?'EN':'中';
   if(menuButton)menuButton.textContent=language==='zh'?'菜单':'Menu';
+  document.dispatchEvent(new CustomEvent('worklist:languagechange',{detail:{language}}));
 }
 languageButton?.addEventListener('click',()=>{
   language=language==='zh'?'en':'zh';
