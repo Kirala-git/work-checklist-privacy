@@ -14,10 +14,10 @@
       "filename": "WorkList-Setup-0.1.3-x64.exe"
     },
     "kylin": {
-      "version": "0.1.6",
+      "version": "0.1.7",
       "architecture": "ARM64",
-      "url": "https://model.hlplan.cn/worklist-updates/kylin/arm64/WorkList-0.1.6-arm64.deb",
-      "filename": "WorkList-0.1.6-arm64.deb"
+      "url": "https://model.hlplan.cn/worklist-updates/kylin/arm64/WorkList-0.1.7-arm64.deb",
+      "filename": "WorkList-0.1.7-arm64.deb"
     }
   }
 }
