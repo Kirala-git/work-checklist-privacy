@@ -111,7 +111,9 @@
     let visitor=null;
     let session=null;
     let initialized=false;
+    let visitAttempted=false;
     let destroyed=false;
+    let configurationPromise=null;
     let refreshPromise=null;
     let refreshTimer=null;
     const activeRequests=new Set();
@@ -129,7 +131,7 @@
       };
       root.setAttribute('data-state',phase);
       status.textContent=messages[phase]+(privacy?(zh?' · DNT/GPC 已开启，本次不上报':' · DNT/GPC enabled; this visit is not reported'):'');
-      refreshButton.disabled=!endpoint || phase==='loading';
+      refreshButton.disabled=phase==='unconfigured' || phase==='loading';
       const format=new Intl.NumberFormat(zh?'zh-CN':'en-US');
       for(const cell of cells){
         const path=cell.getAttribute('data-stats-value').split('.');
@@ -161,13 +163,28 @@
       }
     }
     function refresh(){
-      if(destroyed || !endpoint)return Promise.resolve(null);
+      if(destroyed)return Promise.resolve(null);
+      if(!endpoint)return loadConfiguration();
       if(refreshPromise)return refreshPromise;
       phase='loading';render();
       refreshPromise=requestJSON(`${endpoint}/api/site-stats/summary?site=${SITE}`,{method:'GET'},16384).then(value=>{
         summary=validateSummary(value);phase='ready';render();return summary;
       }).catch(()=>{phase='unavailable';render();return null;}).finally(()=>{refreshPromise=null;});
       return refreshPromise;
+    }
+    function loadConfiguration(){
+      if(destroyed)return Promise.resolve(null);
+      if(configurationPromise)return configurationPromise;
+      phase='loading';render();
+      configurationPromise=requestJSON('stats-config.json',{method:'GET'},4096).then(config=>{
+        if(destroyed)return null;
+        if(!isObject(config))throw new Error('Invalid statistics configuration');
+        endpoint=validateEndpoint(config.endpoint);
+        if(!endpoint){phase='unconfigured';render();return null;}
+        if(!visitAttempted){visitAttempted=true;report('visit');}
+        return refresh();
+      }).catch(()=>{phase='unavailable';render();return null;}).finally(()=>{configurationPromise=null;});
+      return configurationPromise;
     }
     function identities(){
       if(prefersPrivacy(navigator,window))return false;
@@ -214,14 +231,7 @@
       async init(){
         if(initialized || destroyed)return;
         initialized=true;
-        try{
-          const config=await requestJSON('stats-config.json',{method:'GET'},4096);
-          if(!isObject(config))throw new Error('Invalid statistics configuration');
-          endpoint=validateEndpoint(config.endpoint);
-          if(!endpoint){phase='unconfigured';render();return;}
-          report('visit');
-          await refresh();
-        }catch{phase='unavailable';render();}
+        return loadConfiguration();
       },
       refresh,
       getState:()=>({phase,summary,endpoint}),
