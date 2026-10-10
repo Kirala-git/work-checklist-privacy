@@ -8,16 +8,16 @@
       "filename": ""
     },
     "windows": {
-      "version": "0.1.5",
+      "version": "0.1.6",
       "architecture": "x64",
-      "url": "https://model.hlplan.cn/worklist-updates/windows/x64/WorkList-Setup-0.1.5-x64.exe",
-      "filename": "WorkList-Setup-0.1.5-x64.exe"
+      "url": "https://model.hlplan.cn/worklist-updates/windows/x64/WorkList-Setup-0.1.6-x64.exe",
+      "filename": "WorkList-Setup-0.1.6-x64.exe"
     },
     "kylin": {
-      "version": "0.1.8",
+      "version": "0.1.9",
       "architecture": "ARM64",
-      "url": "https://model.hlplan.cn/worklist-updates/kylin/arm64/WorkList-0.1.8-arm64.deb",
-      "filename": "WorkList-0.1.8-arm64.deb"
+      "url": "https://model.hlplan.cn/worklist-updates/kylin/arm64/WorkList-0.1.9-arm64.deb",
+      "filename": "WorkList-0.1.9-arm64.deb"
     }
   }
 }
